@@ -1,0 +1,96 @@
+body {
+  background-color: #fcefe8;
+}
+header {
+  margin-top: 20px;
+}
+.wrap {
+  width: 90%;
+  display: flex;
+}
+.img-ct {
+  margin: 0;
+  flex-basis: 24%;
+}
+.img-ct img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  vertical-align: middle;
+}
+.header-detail {
+  margin-left: 2%;
+}
+.header-detail ul {
+  display: flex;
+  flex-direction: column;
+}
+.header-detail li {
+  margin: 5px 0;
+}
+.create-detail {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  width: 30px;
+  margin: 0;
+  border-radius: 50%;
+}
+.creater {
+  margin: 0 5px;
+}
+.creater,
+.tag,
+.songs-num,
+.view-counts,
+.description {
+  color: #666;
+  font-size: 14px;
+}
+main {
+  margin: 20px 0;
+}
+.song-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.song-list .item:first-child {
+  color: #666;
+}
+.item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #ffc773;
+}
+.item:not(:first-child) {
+  cursor: pointer;
+}
+.item:not(:first-child):hover {
+  background-color: #edd1d8;
+}
+.song-name {
+  flex: 3;
+}
+.singer {
+  flex: 2;
+}
+.album {
+  flex: 2;
+}
+.duration {
+  flex: 1;
+}
+.song-name,
+.singer,
+.album,
+.duration {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 8px;
+}
+

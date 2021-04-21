@@ -1,0 +1,148 @@
+.layout {
+  width: 85%;
+}
+.music-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  padding-top: 12vh;
+  height: 80vh;
+}
+.song-pic {
+  width: 40%;
+  margin: 0;
+}
+.song-pic img {
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.detail {
+  flex: 1;
+  position: relative;
+  margin-left: 12vh;
+  color: #fff;
+}
+.detail .tag {
+  display: inline-block;
+  padding: 0.5vh 1.5vh;
+  background-color: #2d6bce;
+  border-radius: 3px;
+  margin-bottom: 2vh;
+  font-size: 2vh;
+}
+.detail h2 {
+  font-size: 5vh;
+}
+.detail span,
+.detail .iconfont {
+  font-size: 3vh;
+  padding-right: 1vh;
+}
+.detail .singer {
+  margin-top: 2vh;
+  font-size: 2vh;
+}
+.lyric-ct {
+  position: absolute;
+  top: 22vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 2vh;
+}
+.lyric {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lyric p {
+  line-height: 3vh;
+}
+.pro-area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 5vh;
+}
+.progress-bar {
+  position: relative;
+  flex: 1;
+  height: 0.6vh;
+  border-radius: 0.4vh;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 0.2vh;
+  background-color: #fff;
+  z-index: 1;
+}
+.time-progress,
+.pro-area .time {
+  font-size: 2vh;
+  margin: 0 1vh;
+  text-align: right;
+  color: #fff;
+}
+.pro-area span {
+    color: #fff;
+}
+footer {
+  width: 100%;
+  margin: 4vh 0 12vh 0;
+}
+.play-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.play-btn > span {
+  flex: 1;
+}
+
+.play-state {
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.4);
+}
+.play-state .iconfont {
+  font-size: 5vh;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.play-state .iconfont:hover {
+  color: #fff;
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #eee center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  filter: blur(4px);
+}
+.bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+}
