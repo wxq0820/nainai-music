@@ -6,7 +6,7 @@ export default function recommendMusic (node) {
 recommendMusic.prototype = {
     init: function (node) {
         this.node = node
-        this.url = 'http://musicapi.leanapp.cn/top/playlist'
+        this.url = 'https://musicapi.leanapp.cn/top/playlist'
         this.requestData()
 
     },

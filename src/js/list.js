@@ -7,7 +7,7 @@ import timeTool from './time.js';
 let id = window.location.href.split('?')[1].split('=')[1]
 
 request({
-    url: 'http://musicapi.leanapp.cn/playlist/detail',
+    url: 'https://musicapi.leanapp.cn/playlist/detail',
     data: { id },
     onSuccess: render,
     onError: function () { console.log('获取数据失败') }

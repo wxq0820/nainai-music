@@ -5,7 +5,7 @@ export default function newMusic () {
 }
 newMusic.prototype = {
     init: function () {
-        this.url = 'http://musicapi.leanapp.cn/top/song?type=0'
+        this.url = 'https://musicapi.leanapp.cn/top/song?type=0'
         this.requestData()
     },
     bind: function () {
